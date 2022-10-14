@@ -6,10 +6,13 @@ const PORT = process.env.API_PORT
 
 app.use(express.json())
 
-//db
+// db
 import db from "./db/db"
+
+// logger
+import Logger from "./helpers/logger"
 
 app.listen(PORT, async () => {
     await db()
-    console.log(`localhost:${PORT}`)
+    Logger.info(`localhost:${PORT}`)
 })
