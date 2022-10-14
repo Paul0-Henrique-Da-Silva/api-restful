@@ -1,0 +1,4 @@
+2022-10-14 12:55:06:556 - [31merror[39m: [31mErro: Error: queryTxt ESERVFAIL cluster0.1s8u7r0.mongodb.net[39m
+2022-10-14 12:55:06:556 - [31merror[39m: [31mnão foi possivel conectar ao banco![39m
+2022-10-14 12:55:40:5540 - [31merror[39m: [31mquerySrv ESERVFAIL _mongodb._tcp.cluster0.1s8u7r0.mongodb.net[39m
+2022-10-14 12:55:40:5540 - [31merror[39m: [31mnão foi possivel conectar ao banco![39m
