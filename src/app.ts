@@ -12,6 +12,17 @@ import db from "./db/db"
 // logger
 import Logger from "./helpers/logger"
 
+
+// middleware
+import morganMiddleware from "./middleware/morgan";
+
+//router
+import movie from "./router/movie.router"
+
+
+app.use('/api/', movie)
+
+
 app.listen(PORT, async () => {
     await db()
     Logger.info(`localhost:${PORT}`)
