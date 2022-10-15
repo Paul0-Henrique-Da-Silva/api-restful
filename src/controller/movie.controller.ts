@@ -51,6 +51,21 @@ export async function remove( request: Request, response: Response) {
     } catch (e: any) {
       Logger.error(`Erro no sistema:${e.message}`)
       return response.status(500).json({message: "Por favor, tente mais tarde!"})
+    }  
+}
+
+export async function update(request: Request, response: Response) {
+   try {
+    const id = request.params.id
+    const data = request.body
+    const movie = await MovieModel.findById(id)
+    if(!movie) {
+      return response.status(400).json({message: "O filme não existe"})
     }
-  
+    await MovieModel.updateOne({_id: id}, data)
+    return response.status(200).json(data)
+   } catch (e:any) {
+    Logger.error(`Erro no sistema:${e.message}`)
+    return response.status(500).json({message: "Por favor, tente mais tarde!"})
+   }
 }
