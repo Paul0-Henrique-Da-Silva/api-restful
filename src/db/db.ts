@@ -8,10 +8,10 @@ async function connect() {
     const url: string = `mongodb+srv://${user}:${password}@cluster0.1s8u7r0.mongodb.net/?retryWrites=true&w=majority`
     try {
         await mongoose.connect(url)
-        Logger.info("conecção realizada com sucesso!")
+        Logger.info("Conecção realizada com sucesso!")
     } catch (e) {
         Logger.error(e)
-        Logger.error("não foi possivel conectar ao banco!")
+        Logger.error("Não foi possivel conectar ao banco!")
     }
 }
 
