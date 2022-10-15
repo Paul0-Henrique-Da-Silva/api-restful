@@ -19,6 +19,7 @@ import morganMiddleware from "./middleware/morgan";
 //router
 import movie from "./router/movie.router"
 
+app.use(morganMiddleware)
 
 app.use('/api/', movie)
 
