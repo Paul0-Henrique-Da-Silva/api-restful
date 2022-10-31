@@ -1,4 +1,4 @@
-# api-restful
+# api-restful cadastro de filmes
 API de cadastro de filmes, C.R.U.D .
 
 No diretrio raiz crie um arquivo com formato `.env` e ensira configurações como no exemplo abaixo.
